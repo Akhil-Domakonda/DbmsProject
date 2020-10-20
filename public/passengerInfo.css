@@ -1,0 +1,58 @@
+body{
+    height: 100%;
+    background: transparent linear-gradient(111deg, #009FFD 0%, #2A2A72 100%)  no-repeat padding-box;
+}
+.logo{
+    margin: 35px;   
+}
+.logo img{
+    float: right;
+    height: 170px;
+    width: 370px;
+}
+.logo h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 165px;
+    margin-left: 120px;
+}
+form input{
+    color: #2A2A72;
+    letter-spacing: 0px;
+    font-size: 15px;
+    font-weight: bolder;
+    float: inline-start;
+    font-family:'Montserrat',sans-serif;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 8px;
+    opacity: 1;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+form select{
+    color: #2A2A72;
+    letter-spacing: 0px;
+    font-size: 20px;
+    float: inline-start;
+    font-family:'Montserrat',sans-serif;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 8px;
+    opacity: 1;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+form button{
+    background: #C4E9FF 0% 0% no-repeat ;
+    text-align: center;
+    font-family:'Montserrat',sans-serif;
+    letter-spacing: 0px;
+    color: #2A2A72;
+    width: 120px;
+    height: 35px;
+    border-radius: 48px;
+    border: none;
+}

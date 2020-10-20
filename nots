@@ -1,0 +1,2 @@
+    let sql="SELECT * FROM passenger_details where gender='"+req.body.gender+"' && passport_id=' "+req.body.passportId+"' && full_name='"+req.body.Full_name+"' && weight_of_luggage"+req.weight+";";
+    let sql="SELECT * FROM passenger_details where gender='"+req.body.gender+"' && passport_id=' "+req.body.passportId+"' && full_name='"+req.body.Full_name+"';";

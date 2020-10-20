@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <div class="logo">
+            <img src="images/1200px-Rajiv_Gandhi_International_Airport_Logo.svg.png" alt="">
+        </div>
+        <div class="picture">
+            <img src="images/1.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="/booking" method="post">
+                <div class="opt">
+                    <div class="opt">
+                        <label for="passportNumber" class="passportNumber">Passport Number</label>
+                        <input type="text" name="passportNumber" id="passportNumber" placeholder=" Enter Passport Number">
+                    </div>
+                    <label for="flightNumber" class="flightText">Flight Number</label>
+                    <input type="text" name="flightNumber" id="flightNumber" placeholder=" Enter Flight Number">
+                </div>
+                <br>
+                <div class="opt">
+                    <button type="submit">Book flight</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background: transparent linear-gradient(111deg, #009FFD 0%, #2A2A72 100%)  no-repeat padding-box;  
+}
+
+.landingBody{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.landingLogo{
+    position: absolute;
+    top: 35px;
+    left: 75%;
+    transition: all ease-in-out 1s;
+}
+.landingLogo img{
+    height: 159px;
+    width: 315px;
+}
+
+.landingHeading{
+    position: absolute;
+    top: 183px;
+    left: 120px;
+    width: 40%;
+    height: 138px;
+}
+
+.landingHeading h1{
+    text-align: left;
+    font: normal normal 600 57px/69px 'Montserrat',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.landingHeading h1 span{
+    color: #2A2A72;
+}
+
+.landingPicture{
+    position: absolute;
+    bottom: 0px;
+    right: 77px;
+    transition: all ease-in-out 1s;
+}
+
+.landingPicture img{
+    height: 480px;
+    width: 460px;
+}
+
+.landingButton{
+    position: absolute;
+    top: 495px;
+    left: 120px;
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    background: #C4E9FF 0% 0% no-repeat padding-box;
+    border-radius: 48px;
+    opacity: 1;
+}
+
+.landingButton a{
+    text-decoration: none;
+    font: normal normal 600 30px/37px 'Montserrat';
+    color: #2A2A72;
+}
+

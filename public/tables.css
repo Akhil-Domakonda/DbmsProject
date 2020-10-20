@@ -1,0 +1,17 @@
+body{
+    background: transparent linear-gradient(111deg, #009FFD 0%, #2A2A72 100%)  no-repeat padding-box;
+}
+.logo{
+    margin: 35px;   
+}
+.logo img{
+    float: right;
+    height: 170px;
+    width: 370px;
+}
+.logo h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 165px;
+    margin-left: 120px;
+}

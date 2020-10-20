@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passengers</title>
+    <link rel="stylesheet" href="passengerInfo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/1200px-Rajiv_Gandhi_International_Airport_Logo.svg.png" alt="">
+        <h1>Passenger Information</h1>
+    </div>
+    <div class="container">
+        <div class="info">
+
+            <form action="/filter1" method="POST">
+                <select name="gender" id="Gender">
+                    <option value="gender" disabled selected>gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+
+                <button type="submit">Filter</button>
+            </form>
+
+            <form action="/filter2" method="post">
+                <input type="text" name="passportId" id="" placeholder="Enter passport_id">
+                <button type="submit">Search</button>
+            </form>
+            <form action="/filter3" method="post">
+                <input type="text" name="Full_name" placeholder="Enter full name">
+                <button type="submit">Search</button>
+            </form>
+
+    
+            <table class="table table-bordered">
+                <thead class="thead-dark ">
+                    <tr>
+                        <th>Passport_id</th>
+                        <th>Full_name</th>
+                        <th>DOB</th>
+                        <th>Weight of lauggage</th>
+                        <th>part of family</th>
+                        <th>Gender</th>  
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <% for(var i=0;i<data.length;i++){ %>
+                        <tr class="table-light">
+                                <td><%=data[i].passport_id%></td>
+                                <td><%=data[i].full_name%></td>
+                                <td><%=data[i].dob%></td>
+                                <td><%=data[i].weight_of_luggage%></td>
+                                <td><%=data[i].part_of_family%></td>
+                                <td><%=data[i].gender%></td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passengers</title>
+    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="height: 100vh;">
+    <div class="logo">
+        <img src="images/1200px-Rajiv_Gandhi_International_Airport_Logo.svg.png" alt="">
+        <h1>Flight Information</h1>
+    </div>
+    <div class="container">
+        <div class="info">
+            <table class="table table-bordered">
+                <thead class="thead-dark ">
+                    <tr>
+                        <th>Flight Number</th>
+                        <th>Flight Type</th>
+                        <th>Captain Id</th>
+                        <th>Copilot Id</th>
+                        <th>Head Flight Attendant Id</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <% for(var i=0;i<data.length;i++){ %>
+                        <tr class="table-light">
+                            <td><%=data[i].flight_number%></td>
+                            <td><%=data[i].flight_type%></td>
+                            <td><%=data[i].captain_id%></td>
+                            <td><%=data[i].copilot_id%></td>
+                            <td><%=data[i].head_flight_attendant_id%></td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

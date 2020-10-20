@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passengers</title>
+    <link rel="stylesheet" href="passengerInfo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/1200px-Rajiv_Gandhi_International_Airport_Logo.svg.png" alt="">
+        <h1>Staff Information</h1>
+    </div>
+    <div class="container">
+        <div class="info">
+
+            <form action="/filter4" method="POST">
+                <select name="gender" id="Gender">
+                    <option value="gender" disabled selected>gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+
+                <button type="submit">Filter</button>
+            </form>
+
+            <form action="/filter5" method="POST">
+                <select name="dept_id" id="dept_id">
+                    <option value="d" disabled selected>Choose Department_id</option>
+                    <option value="DP01">DP01-"Captain"</option>
+                    <option value="DP02">DP02-"Co-pilot"</option>
+                    <option value="DP03">DP03-"Flight-attendent"</option>
+                </select>
+
+                <button type="submit">Filter</button>
+            </form>
+
+            <form action="/filter6" method="post">
+                <input type="text" name="Full_name" placeholder="Enter employee name">
+                <button type="submit">Search</button>
+            </form>
+    
+            <table class="table table-bordered">
+                <thead class="thead-dark ">
+                    <tr>
+                        <th>Staff_id</th>
+                        <th>Full_name</th>
+                        <th>Salary</th>
+                        <th>Reporting time</th>
+                        <th>DOB</th>
+                        <th>Joining date</th>
+                        <th>Gender</th>
+                        <th>Department_id</th> 
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <% for(var i=0;i<data.length;i++){ %>
+                        <tr class="table-light">
+                            <td><%=data[i].sid%></td>
+                            <td><%=data[i].full_name%></td>
+                            <td><%=data[i].salary%></td>
+                            <td><%=data[i].reporting_time%></td>
+                            <td><%=data[i].date_of_birth%></td>
+                            <td><%=data[i].joining_date%></td>
+                            <td><%=data[i].gender%></td>
+                            <td><%=data[i].department_id%></td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
